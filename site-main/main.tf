@@ -88,6 +88,7 @@ resource "aws_cloudfront_distribution" "website_cdn" {
   enabled = true
   price_class = "PriceClass_200"
   http_version = "http1.1"
+  comment = "${var.cloudfront_comment}"
 
   "origin" {
     origin_id = "origin-bucket-${aws_s3_bucket.website_bucket.id}"

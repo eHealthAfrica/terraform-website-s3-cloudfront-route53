@@ -12,3 +12,4 @@ variable routing_rules {
 variable not-found-response-path {
   default = "/404.html"
 }
+variable cloudfront_comment {}
